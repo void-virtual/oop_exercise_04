@@ -1,0 +1,21 @@
+Rhombus, p1: 0 0, p2: 3 4, p3: 8 4, p4: 5 0
+Area of figure: 20
+Center of figure: 4 2
+Trapeze p1:0 0, p2:2 2, p3:4 2, p4:6 0
+Area of figure: 12
+Center of figure: 3 1
+Pentagon, p1: 0 0, p2: 2 3, p3: 7 2, p4: 7 -4, p5: 2 -5
+Area of figure: 43
+Center of figure: 3.6 -0.8
+Enter size of tuple
+Figurelike tuple of 3 elements: (0 0) (2 2) (4 0)
+Area of figurelike tuple: 4
+Center of figurelike tuple: 2 0.666667
+Enter size of tuple
+Figurelike tuple of 4 elements: (0 0) (3 4) (8 4) (5 0)
+Area of figurelike tuple: 20
+Center of figurelike tuple: 4 2
+Enter size of tuple
+Figurelike tuple of 5 elements: (0 0) (2 3) (7 2) (7 -4) (3 -3)
+Area of figurelike tuple: 34
+Center of figurelike tuple: 3.8 -0.4

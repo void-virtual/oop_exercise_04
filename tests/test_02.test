@@ -1,0 +1,6 @@
+rhombus 0 0 3 4 8 4 5 0
+trapeze 0 0 2 2 4 2 6 0
+pentagon 0 0 2 3 7 2 7 -4 2 -5
+tuple 3 0 0 2 2 4 0
+tuple 4 0 0 3 4 8 4 5 0
+tuple 5 0 0 2 3 7 2 7 -4 3 -3

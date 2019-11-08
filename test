@@ -1,0 +1,17 @@
+#!/bin/bash
+prog="./cmake-build-debug/oop_exercise_04"
+a=1
+
+for file in tests/test_??.test
+do
+    "$prog" < "$file" > tmp_test_file
+    if diff tmp_test_file ${file%%.*}.result
+    then
+	echo "test $a OK"
+    else
+ 	echo "test $a NOT OK"
+    fi
+    let "a += 1"
+    rm tmp_test_file
+done
+    
