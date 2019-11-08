@@ -1,5 +1,8 @@
 #pragma once
 
+#include <utility>
+#include "Point.h"
+
 template <typename T>
 struct is_point : std::false_type {};
 
