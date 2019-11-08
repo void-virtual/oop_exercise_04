@@ -9,15 +9,14 @@ struct is_point : std::false_type {};
 template <typename T>
 struct is_point<Point<T>> : std::true_type {};
 
-template <typename T, typename = void, typename = void, typename = void, typename = void>
+template <typename T, typename = void>
 struct is_figure : std::false_type {};
 
 template <typename T>
-struct is_figure<T,
-        std::void_t<decltype(std::declval<const T&>().Area())>,
-        std::void_t<decltype(std::declval<const T&>().Center())>,
-        std::void_t<decltype(std::declval<const T&>().Print(std::cout))>,
-        std::void_t<decltype(std::declval<T&>().Scan(std::cin))>> : std::true_type {};
+struct is_figure<T, std::void_t<decltype(std::declval<const T&>().Area()),
+                    decltype(std::declval<const T&>().Center()),
+                    decltype(std::declval<const T&>().Print(std::cout)),
+                    decltype(std::declval<T&>().Scan(std::cin))>> : std::true_type {};
 
 template <typename T> //площадь для всего, что имеет площадь
 decltype(std::declval<const T&>().Area()) area(const T& figure) {
